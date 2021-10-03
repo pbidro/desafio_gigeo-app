@@ -48,9 +48,18 @@ p{color:gray;}
     &__list {
         list-style: none;
     }
-    &__buttons {
-     top:0;
+
+    @include large-breakpoint{
+        justify-content: center;
+
+        &__buttons {
+        
+          display: none;
+        }
+        
     }
+
+        
 }
 .btn-primary{
     background-color: rgb(126, 222, 232);

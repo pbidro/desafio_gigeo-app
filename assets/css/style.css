@@ -11162,8 +11162,13 @@ p {
 .author__list {
   list-style: none;
 }
-.author__buttons {
-  top: 0;
+@media (max-width: 991px) {
+  .author {
+    justify-content: center;
+  }
+  .author__buttons {
+    display: none;
+  }
 }
 
 .btn-primary {
